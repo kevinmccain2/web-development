@@ -9,7 +9,7 @@
         #interactiveDiv {
             width: 200px;
             height: 100px;
-            background-color: rgb(142, 184, 198);
+            background-color: lightblue;
             border: 2px solid blue;
             text-align: center;
             line-height: 100px;
@@ -24,17 +24,14 @@
 <script>
     // JavaScript code to interact with the DOM elements
 
-    // Function to change the text of the div when clicked
+    // Function to redirect to a website when the div is clicked
     document.getElementById('interactiveDiv').addEventListener('click', function() {
-        this.innerText = 'Div Clicked!';
+        // Change the window location to the desired URL
+        window.location.href = https://www.youtube.com/watch?v=uJMCNJP2ipI;
     });
 
     // Log a message to the console when the page loads
     console.log('Page loaded');
-
-    // Prompt the user for input and display it within the div
-    var userInput = prompt('Please enter some text:');
-    document.getElementById('interactiveDiv').innerText = userInput;
 </script>
 
 </body>
