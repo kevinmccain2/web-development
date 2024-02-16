@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Page</title>
+    <style>
+        /* Add any CSS styles here */
+        #interactiveDiv {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            border: 2px solid blue;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="interactiveDiv">Click Me</div>
+
+<script>
+    // JavaScript code to interact with the DOM elements
+
+    // Function to change the text of the div when clicked
+    document.getElementById('interactiveDiv').addEventListener('click', function() {
+        this.innerText = 'Div Clicked!';
+    });
+
+    // Log a message to the console when the page loads
+    console.log('Page loaded');
+
+    // Prompt the user for input and display it within the div
+    var userInput = prompt('Please enter some text:');
+    document.getElementById('interactiveDiv').innerText = userInput;
+</script>
+
+</body>
+</html>
